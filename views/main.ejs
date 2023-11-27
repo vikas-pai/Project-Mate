@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Issue Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Full-width navbar -->
+    <div class="navbar">
+      <div>
+        <a href="/">Home</a>
+        <a href="/projects">Projects</a>
+        <a id="aboutModal" href="#">About</a>
+        <a href="/login" id="logout">Logout</a>
+      </div>
+      <button id="green-button">+ Create Issue</button>
+    </div>
+
+    <!-- Hello username text -->
+
+    <!-- Create issue button -->
+    <!-- <button class="create-issue-btn" onclick="openCreateIssueModal()">
+      Create Issue
+    </button> -->
+
+    <!-- Filters section -->
+    <div class="filters-section">
+      <div class="allfilters">
+        <select class="filter-dropdown" id="projectnames"></select>
+        <select class="filter-dropdown" id="issuenames">
+          <option value="myissues">My Issues</option>
+          <option value="allissues">All Issues</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Responsive card -->
+    <div id="issues"></div>
+
+    <!-- Create Issue Modal -->
+    <div class="modal" id="createIssueModal">
+      <div class="modal-content">
+        <span id="closeIssueModal" class="close-modal">&times;</span>
+        <h2>Create Issue</h2>
+        <form class="issue-form" id="formIssue" name="my-form">
+          <!-- Issue creation options go here -->
+          <label for="project-name">Project Name:</label>
+          <select
+            class="filter-dropdown"
+            id="projectNameInIssue"
+            name="projectNameInIssue"
+          ></select
+          ><br /><br />
+          <label for="issue-type">Issue Type:</label>
+          <select class="filter-dropdown" id="issue-type" name="issue-type">
+            <option value="task">Task</option>
+            <option value="bug" selected="selected">Bug</option>
+            <option value="new-feature" >New Feature</option>
+            <option value="improvement">Improvement</option>
+            <option value="question">Question</option></select
+          ><br /><br />
+          <label for="priority">Priority:</label>
+          <select class="filter-dropdown" id="priority" name="priority">
+            <option value="blocker">Blocker</option>
+            <option value="critical">Critical</option>
+            <option value="major" selected="selected">Major</option>
+            <option value="minor">Minor</option>
+            <option value="trivial">Trivial</option></select
+          ><br /><br />
+          <label for="issue-summary">Issue Summary:</label>
+          <input
+            type="text"
+            id="issue-summary"
+            name="issue-summary"
+          /><br /><br />
+          <label for="issue-due-date">Due Date:</label>
+          <input
+            type="date"
+            id="issue-due-date"
+            name="issue-due-date"
+          /><br /><br />
+          <label for="assigneeInIssue">Assignee Name:</label>
+          <select
+            class="filter-dropdown"
+            id="assigneeInIssue"
+            name="assigneeInIssue"
+          ></select
+          ><br /><br />
+          <label for="issue-description">Description:</label>
+          <textarea
+            id="issue-description"
+            name="issue-description"
+            rows="4"
+            cols="50"
+          ></textarea
+          ><br /><br />
+          <!-- <button id="closeIssueModal1" class="submit-issue">
+            Submit
+          </button> -->
+          <input
+            type="button"
+            value="Submit"
+            id="submitIssueModal"
+            class="submit-issue"
+          />
+        </form>
+      </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

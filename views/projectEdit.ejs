@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Issue</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/issue.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div>
+        <a href="/">Home</a>
+        <a href="projects">Projects</a>
+        <a id="aboutModal" href="#">About</a>
+        <a href="/login" id="logout">Logout</a>
+      </div>
+    </div>
+    <!-- <div id="issueDetail" class="issueDetail">Issue Details</div>
+    <div id="issueId" class="issueId issueChild">Issue ID: 1</div>
+    <div id="issuename" class="issuename issueChild">Issue Name: 1</div>
+    <div id="projectId" class="projectId issueChild">Project ID: 1</div>
+    <div id="issueType" class="issueType issueChild">Issue Type: 1</div>
+    <div id="status" class="status issueChild">Status: 1</div>
+    <div id="summary" class="summary issueChild">Summary: 1</div>
+    <div id="description" class="description issueChild">Description: 1</div>
+    <div id="affectversion" class="affectversion issueChild">
+      Affect Version: 1
+    </div>
+    <div id="fixedversion" class="fixedversion issueChild">
+      Fixed Version: 1
+    </div>
+    <div id="priority" class="priority issueChild">Priority: 1</div>
+    <div id="assigneeId" class="assigneeId issueChild">Asignee ID: 1</div>
+    <div id="reporterId" class="reporterId issueChild">Reporter ID: 1</div>
+    <div id="duedate"   class="duedate issueChild">Duedate: 1</div> -->
+    <form class="issue-form" id="formIssue" name="my-form">
+      <!-- Issue creation options go here -->
+      <label id="project-name" for="project-name">Project Name:</label>
+      <br /><br />
+      <label for="project-version">Project Version:</label>
+      <input type="text" id="project-version" /><br /><br />
+      <label id="issueCount" for="issueCount">Issue Count:</label>
+      <!-- <button id="closeIssueModal1" class="submit-issue">
+          Submit
+        </button> -->
+      <div>
+        <input type="button" value="Edit" id="editProject" class="edit-project" />
+      </div>
+    </form>
+    <script type="module" src="/projectEdit.js"></script>
+  </body>
+</html>
