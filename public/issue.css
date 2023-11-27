@@ -1,0 +1,12 @@
+.issueDetail{
+    text-align: center;
+    margin:10px;
+    font-size: larger;
+    font-weight: 900;
+}
+.issueChild{
+    text-align: center;
+    margin:10px;
+    font-size:medium;
+    font-weight: 500;
+}

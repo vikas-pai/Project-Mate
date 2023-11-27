@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(to right, #3498db, #2980b9);
+  color: #fff;
+}
+
+/* Full-width navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #2c3e50, #34495e);
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar links */
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+}
+
+/* Logo */
+.logo {
+  max-width: 100px;
+}
+#green-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #4caf50; /* Green color */
+  border: 2px solid #4caf50; /* Matching border color */
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  margin-left: 60%;
+}
+
+/* Hover effect */
+#green-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Filters section */
+.filters-section {
+  display: flex;
+  align-items: right;
+  background: linear-gradient(to right, #2c3e50, #34495e);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Filters label */
+.filters-label {
+  font-size: 18px;
+}
+.allfilters {
+  margin-left: 80%;
+}
+/* Filters dropdown */
+.filter-dropdown {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+/* Responsive card */
+.long-card {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  background: #000;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  cursor: pointer; /* Add cursor style to indicate clickability */
+  transition: transform 0.2s; /* Add a smooth transition effect */
+}
+
+.long-card:hover {
+  transform: scale(1.02); /* Add a slight scale effect on hover */
+}
+
+.long-card-content {
+  padding: 20px;
+}
+
+/* Modal styles */
+
+/* Styles for the container */
+.issue-card {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #000;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/* Styles for card content */
+.issue-card-content {
+  padding: 20px;
+}
+
+/* Optional: Add styles for card title and description */
+.issue-name {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.issue-summary {
+  font-size: 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Styles for the modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 20%;
+  width: 70%;
+  height: 70%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #000;
+  border-radius: 10px;
+  padding: 40px; /* Adjust padding for more content space */
+  max-width: 100%; /* Increase the max-width for a larger modal */
+  text-align: left;
+}
+
+/* Close button for the modal */
+.close-modal {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.issue-form {
+  font-size: 18px;
+  padding: 30px;
+  position: relative;
+}
+.submit-issue {
+  text-align: center;
+  padding: 10px;
+}
+.link-nocolor{
+  text-decoration: none;
+  color: #fff;
+}
